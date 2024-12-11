@@ -1,0 +1,23 @@
+#SingleInstance Force
+
+symLayerEnabled := 1
+
+LAlt & RAlt::
+RAlt & LAlt::
+{
+    global symLayerEnabled
+    symLayerEnabled := !symLayerEnabled
+}
+{% for remap in remaps %}
+$<!{{remap.src}}::
+{
+    global symLayerEnabled
+
+    if symLayerEnabled {
+        Send("{{remap.dst}}")
+    } else {
+        Send("{Blind}{{remap.src}}")
+        symLayerEnabled := !symLayerEnabled
+    }
+}
+{% endfor %}
