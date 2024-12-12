@@ -8,9 +8,9 @@ template = env.get_template('remaps.jinja')
 # asdf   g       h   jkl;   '
 # <zxc   v   b   n   m,./
 #
-# ø~!ø   ø       ø   123+   =
+# ø~!ø   ø       ø   789+   =
 # []{}   ø       ø   4560   _
-# ^&\|   ø   ø   ø   789-
+# ^&\|   ø   ø   ø   123-
 
 remaps = [
     {'src': 'w', 'dst':  '~'},
@@ -27,9 +27,9 @@ remaps = [
     {'src':    'x', 'dst':     '\\'},
     {'src':    'c', 'dst':      '|'},
 
-    {'src': 'u', 'dst':      '1'},
-    {'src': 'i', 'dst':      '2'},
-    {'src': 'o', 'dst':      '3'},
+    {'src': 'u', 'dst':      '7'},
+    {'src': 'i', 'dst':      '8'},
+    {'src': 'o', 'dst':      '9'},
     {'src': 'p', 'dst': '{Raw}+'},
 
     {'src': 'j', 'dst': '4'},
@@ -37,9 +37,9 @@ remaps = [
     {'src': 'l', 'dst': '6'},
     {'src': ';', 'dst': '0'},
 
-    {'src': 'm', 'dst': '7'},
-    {'src': ',', 'dst': '8'},
-    {'src': '.', 'dst': '9'},
+    {'src': 'm', 'dst': '1'},
+    {'src': ',', 'dst': '2'},
+    {'src': '.', 'dst': '3'},
     {'src': '/', 'dst': '-'},
 
     {'src': '[', 'dst': '='},
