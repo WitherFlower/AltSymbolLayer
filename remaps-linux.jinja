@@ -1,0 +1,13 @@
+[ids]
+
+*
+
+[main]
+
+leftalt = layer(symbols)
+
+[symbols:A]
+
+{% for remap in remaps %}
+{{remap.src}} = {{remap.dst}}
+{% endfor %}
